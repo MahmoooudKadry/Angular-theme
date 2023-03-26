@@ -1,0 +1,195 @@
+:root {
+  --main-color : #1ABC9C;
+}
+
+.navbar {
+  background-color: #2C3E50;
+}
+
+button.navbar-toggler , .navbar-toggler-icon {
+color: #1ABC9C;
+background-color: #1ABC9C;
+}
+.navbar a {
+  color: white;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color:  var(--main-color)!important;
+}
+
+.navbar-nav .nav-link.active, .navbar-brand:focus, .navbar-brand:hover {
+  color: white !important;
+}
+
+header {
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+.border-left , .border-right{
+  width: 30%;
+}
+
+header i {
+  position: relative;
+}
+
+/* ------------------ Portfolio ---------------- */
+
+#Portfolio {
+  margin-top: 100px;
+}
+
+#Portfolio h2 {
+  font-size: 3rem;
+}
+
+#Portfolio .border-left , #Portfolio .border-right{
+  width: 10%;
+}
+
+#Portfolio .image-caption {
+  position: absolute;
+  background-color: var(--main-color);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .4s;
+
+}
+
+#Portfolio .image-caption i {
+  font-size: 4.5rem;
+}
+
+#Portfolio .item {
+  cursor: pointer;
+}
+
+#Portfolio .item:hover .image-caption {
+  opacity: 1;
+}
+
+#lightBoxContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999999;
+  overflow: scroll;
+}
+
+#lightBoxContainer h2 {
+  font-size: 3rem;
+}
+
+#lightBoxContainer i {
+  color: #1ABC9C;
+  cursor: pointer;
+}
+
+#lightBoxContainer .border-left , #lightBoxContainer .border-right{
+  width: 10%;
+}
+
+#lightBox {
+  background-image: url(images/cabin.png);
+  background-position: center center;
+  background-size: cover;
+  width: 700px;
+  height: 500px;
+}
+
+#lightBoxContainer .btn , #lightBoxContainer button i {
+  background-color: #1ABC9C;
+  color: white;
+}
+
+/* ------------------ End Portfolio ---------------- */
+/* ------------------ About ---------------- */
+
+#about {
+  margin-top: 100px;
+}
+#about {
+  background-color: #1ABC9C;
+  /* padding: 10rem; */
+}
+
+#about .border-left , #about .border-right{
+  width: 10%;
+}
+/* ------------------ End About ---------------- */
+/* ------------------ contact ---------------- */
+
+#contact {
+  margin-top: 100px;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+#contact .border-left , #contact .border-right{
+  width: 10%;
+}
+
+#contact .btn {
+  background-color: #1ABC9C;
+  color: white;
+}
+
+#contact .btn:hover {
+  background-color: #1e5e51;
+}
+
+#contact-info {
+  background-color: #2C3E50;
+}
+
+#contact-info .icon i {
+  width: 50px;
+  height: 50px;
+  border: 2px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#contact-info i:hover{
+  background-color: white;
+  color: black;
+}
+
+/* ------------------ End contact ---------------- */
+/* ------------------ footer ---------------- */
+footer {
+  background-color: #1A252F;
+}
+
+#notfound {
+  margin-top: 100px;
+}
+
+/* ------------------ End footer ---------------- */
+
+
+@media screen and (max-width: 992px) {
+  #lightBox {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #lightBox {
+    width: 400px;
+    height: 300px;
+  }
+}
