@@ -11,7 +11,7 @@ let routers = createBrowserRouter(
   [
     {path:'',element:<Layout/>,children:[
       {index:true,element:<Home/>},
-      {index:'Angular-theme',element:<Home/>},
+      {path:'Angular-theme',element:<Home/>},
       {path:'About',element:<About/>},
       {path:'portfolio',element:<Portfolio/>},
       {path:'contact',element:<Contact/>},
