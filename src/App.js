@@ -9,7 +9,7 @@ import Portfolio from './Components/Portfolio/Portfolio'
 
 let routers = createBrowserRouter(
   [
-    {path:'',element:<Layout/>,children:[
+    {path:'Angular-theme',element:<Layout/>,children:[
       {index:true,element:<Home/>},
       {path:'Angular-theme',element:<Home/>},
       {path:'About',element:<About/>},
